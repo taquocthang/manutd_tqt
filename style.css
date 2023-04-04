@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background-color: #2b2b2b;
+}
+
+
+/* ============== HEADER ============== */
+
+.wrapper-1 {
+    list-style: none;
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    float: left;
+    background-color: #e9ecef;
+}
+
+.text-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper-1 .text-wrap li {
+    list-style: none;
+    font-size: 11px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.wrapper-1 .text-wrap li a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-wrap li:first-child {
+    margin-left: -10px;
+}
+
+.header {
+    height: 90px;
+    background: #c70101;
+}
+
+.text-wrap li {
+    color: black;
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+
+}
+
+.logo img {
+    cursor: pointer;
+    padding-left: 30px;
+    float: left;
+    width: 130px;
+    height: 90px;
+}
+
+.wrapper-2 .ul-li li {
+    color: white;
+    text-transform: uppercase;
+    float: left;
+    line-height: 90px;
+    margin-left: 50px;
+    list-style: none;
+}
+
+.wrapper-2 .ul-li ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.wrapper-2 .ul-li ul li a:hover {
+    color: black;
+}
+
+.wrapper-2 .ul-li .inp1 input {
+    width: 200px;
+    height: 32px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.wrapper-2 .ul-li li i {
+    cursor: pointer;
+}
+
+
+/* === */
+.checkbox:checked+.label .ball {
+    transform: translate(16.4px);
+}
+
+.dark_moon .label {
+    background-color: #2b2b2b;
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.ball {
+    cursor: pointer;
+    position: absolute;
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s linear;
+}
+
+#checkbox {
+    display: none;
+}
+
+
+/*============== MAIN ==============*/
+
+main {
+    margin-bottom: 25px;
+}
+
+main .slider {
+    width: 100%;
+    height: 337px;
+    animation: slide 20s infinite;
+    background: url(images/4.jpg);
+    background-size: cover;
+}
+
+@keyframes slide {
+
+    20% {
+        background: url(images/anh7.jpg);
+        background-size: cover;
+    }
+
+    40% {
+        background: url(images/img.jpg);
+        background-size: cover;
+    }
+
+    60% {
+        background: url(images/5.jpg);
+        background-size: cover;
+    }
+
+    80% {
+        background: url(images/anhbay.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background: url(images/4.jpg);
+        background-size: cover;
+    }
+}
+
+/* main .slider img {
+    height: 337px;
+    width: 100%;
+} */
+
+/* .main .main-img button{
+    height: 50px;
+    width: 143px;
+    text-transform: uppercase;
+    background-color: #e7e7e7;
+    color: rgb(71, 70, 70);
+    border-bottom: #e7e7e7;
+    font-weight: 800;
+    border-style: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 368px;
+    right: -46px;
+} */
+
+.main-img button a {
+    text-decoration: none;
+    color: black;
+}
+
+main .container {
+    height: 34px;
+
+    background-color: white;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+main .container-item {
+    display: inline-block;
+    margin-right: 10px;
+    align-items: center;
+    line-height: 34px;
+    font-size: 13px;
+}
+
+main .container-item a {
+    font-weight: 800;
+    color: black;
+}
+
+main .text-h1-p {
+    padding-top: 30px;
+    width: 750px;
+    padding-left: 25px;
+}
+
+.text-h1 {
+    font-size: 26.5px;
+    width: 1000px;
+    font-family: "AdihausDIN Cn", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.text-p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 14px;
+    letter-spacing: 1.1px;
+    font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+main .filter-sort {
+    height: 51px;
+    width: 1280px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+main .filter-sort button {
+    margin-right: 30px;
+    font-weight: normal;
+    margin-right: 10px;
+    border: 1px solid #e9ecef;
+    padding: 4px 10px 5px 10px;
+    line-height: 20px;
+    background-color: white;
+}
+
+main .filter-sort button a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    width: 1280px;
+    /* padding-top: 30px; */
+    /* padding: 0 15px; */
+    background-color: white;
+    margin: 0 auto;
+    /* margin-right: auto; */
+    max-width: 100%;
+}
+
+.content .product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .product .product-item {
+    flex-basis: 20%;
+    margin: 30px 10px;
+}
+
+.content .product .product-item button {
+    background-color: white;
+    border: none;
+}
+
+.content img {
+    height: 250px;
+    width: 250px;
+    transition: transform .5s;
+}
+
+.content img:hover {
+    transform: scale(1.5);
+}
+
+.content .product-item p {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.pagraph {
+    margin-top: 50px;
+    width: 990px;
+    height: 220px;
+    padding-left: 83px;
+}
+
+.pagraph-h {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.pagraph-p {
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+}
+
+.main .abay {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.main .abay .img-abay img {
+    width: 80%;
+    height: 90px;
+    margin-left: 10%;
+}
+
+.footer-main {
+    width: 100%;
+    height: 140px;
+}
+
+.catgory {
+    height: 96px;
+    width: 1220px;
+}
+
+.category-h1 {
+    font-size: 24px;
+    padding-bottom: 15px;
+    margin-left: 83px;
+}
+
+.category-li {
+    float: left;
+    height: 96px;
+    margin-left: 83px;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.category-li ul li {
+    list-style: none;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.sign-up {
+    width: 100%;
+    height: 156px;
+    background: #ede734;
+}
+
+.sign-up .nav-button {
+    height: 156px;
+    width: 70%;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.sign-up .nav-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.sign-up .nav-button .sign-up--nav {
+    width: 40%;
+}
+
+.sign-up .nav-button .sign-up--button button {
+    background: black;
+    color: white;
+    width: 250px;
+    height: 50px;
+    box-shadow: 10px 10px 2px black;
+    margin-left: 150px;
+}
+
+
+/*============== FOOTER ==============*/
+
+
+.footer .container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.footer .footer-col {
+    width: 20%;
+    padding: 0 40px;
+    margin: 20px 15px 30px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer ul .space-li {
+    height: 14px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 110px;
+    background-color: #363738;
+}
+
+.footer-bottom .footer-container {
+    width: 80%;
+    color: #999;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .footer-booteem-left {
+    flex-basis: 40%;
+}
+
+.footer-container .footer-booteem-left ul li {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+
+.footer-container .footer-booteem-left ul li:first-child {
+    margin-bottom: 30px;
+}
+
+.footer-container .footer-booteem-right {
+    flex-basis: 60%;
+}
+
+.footer-container .footer-booteem-right ul {
+    display: flex;
+}
+
+.footer-container .footer-booteem-right ul li {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer-container .footer-booteem-right span {
+    margin: 0 10px 0 25px;
+}
